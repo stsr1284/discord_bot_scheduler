@@ -1,5 +1,5 @@
 const { Client, Collection, GatewayIntentBits, Partials } = require('discord.js');
-const { token } = require('./conifg.json');
+const { token } = require('./config.json');
 const { isValidDateFormat } = require('./utils')
 const { addScheduleEntry, getContentByDate, scrapeDataAll, deleteContentByDateAndAuthor} = require('./scheduler')
 // import { addScheduleEntry, getContentByDate, scrapeDataAll, deleteContentByDateAndAuthor } from './scheduler';
