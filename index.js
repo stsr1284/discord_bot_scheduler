@@ -1,9 +1,6 @@
 const { Client, Collection, GatewayIntentBits, Partials } = require('discord.js');
-const { token } = require('./config.json');
 const { isValidDateFormat } = require('./utils')
 const { addScheduleEntry, getContentByDate, scrapeDataAll, deleteContentByDateAndAuthor} = require('./scheduler')
-// import { addScheduleEntry, getContentByDate, scrapeDataAll, deleteContentByDateAndAuthor } from './scheduler';
-
 
 const client = new Client({
   intents: [
@@ -19,7 +16,7 @@ client.commands = new Collection();
 
 client.on('ready', () => console.log(`${client.user.tag} 에 로그인됨`));
 
-client.login(token);
+client.login(process.env.TOKEN);
 
 // 메세지 
 client.on('messageCreate', msg => {
