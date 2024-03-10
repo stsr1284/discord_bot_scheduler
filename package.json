@@ -1,0 +1,16 @@
+{
+  "name": "discord_test1",
+  "version": "1.0.0",
+  "description": "workspace discord app test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "js-yaml": "^4.1.0"
+  }
+}
